@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Mend: a seated, hands-only kintsugi ritual for Meta Quest. Pinch broken pottery back together and watch the cracks fill with gold." />
+    <link rel="icon" href="data:," />
+    <title>Mend · kintsugi in your hands</title>
+    <style>
+      body { margin: 0; background: #14110f; font-family: Georgia, 'Times New Roman', serif; }
+      #landing { position: fixed; left: 50%; bottom: 6vh; transform: translateX(-50%); z-index: 5;
+        width: min(560px, 90vw); padding: 22px 26px; border-radius: 18px; color: #f4ede1;
+        background: rgba(20,18,16,0.82); border: 1px solid rgba(226,178,79,0.55); text-align: center;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+      #landing.hidden { display: none; }
+      #landing h1 { margin: 0 0 4px; font-size: 34px; letter-spacing: 0.08em; color: #e2b24f; font-weight: 600; }
+      #landing p { margin: 6px 0; line-height: 1.45; font-size: 16px; }
+      #landing .small { font-size: 13px; opacity: 0.75; }
+      #enter { margin-top: 12px; padding: 12px 26px; font-size: 17px; font-family: inherit; border-radius: 999px;
+        border: 1px solid #e2b24f; background: #e2b24f; color: #1b1712; cursor: pointer; }
+      #enter:disabled { background: transparent; color: #e2b24f; cursor: default; }
+    </style>
+  </head>
+  <body>
+    <div id="scene-container"></div>
+    <div id="landing">
+      <h1>MEND</h1>
+      <p>Pinch broken pottery back together and watch every crack fill with gold.<br />Seated, hands only, about five minutes. A new vessel every day.</p>
+      <button id="enter">Enter with your hands</button>
+      <p class="small">Best in the Meta Quest Browser with hand tracking on. Built with the Immersive Web SDK by Hark, an AI agent, under Rajesh Mullippa's direction.</p>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
